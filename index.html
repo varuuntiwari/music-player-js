@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"
+        integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/upload.css">
+        <link rel="stylesheet" href="css/player.css">
+        <script src="js/actions.js" type="text/javascript" defer></script>
+        <script src="js/index.js" type="text/javascript" defer></script>
+        <script src="js/upload.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header>
+            Simple Music Player
+        </header>
+        <div id="getSong" class="show">
+            <label id="file-upload">
+                <input id="uploadSong" type="file" accept="audio/*" />
+                upload song
+            </label>
+            <div id="readySong" class="hide">
+                <div id="fileName"></div>
+                <button onclick="showSong()">play this one?</button>
+            </div>
+        </div>
+        <div id="player" class="hide">
+            <img id="cover" width="50%" class="items">
+            <div id="info" class="items">
+                <div id="title" class="glow"></div>
+                <div id="artist" class="glow"></div>
+                <audio id="song" src="" type="audio/mpeg">
+                    Either you have disabled JS or your browser does not support HTML5.
+                </audio>
+                <div id="time" class="items">
+                    <div class="time" id="start"></div>
+                    <div id="total" class="time">
+                        <div id="timeprogress"></div>
+                    </div>
+                    <div class="time" id="end"></div>
+                </div>
+                <div id="tools" class="items">
+                    <img src="img/prev.png" id="prev" class="controls" onclick="prevSong()">
+                    <img src="img/play.png" id="play" class="controls" onclick="playPause()">
+                    <img src="img/next.png" id="next" class="controls" onclick="nextSong()">
+                </div>
+                <div id="volume" class="items">
+                    <img src="img/volume.png" id="mute" onclick="mute()">
+                    <div id="vol">
+                        <div id="volumeprogress"></div>
+                    </div>
+                    <div id="volevel"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

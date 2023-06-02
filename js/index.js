@@ -1,0 +1,1 @@
+const jsmediatags = window.jsmediatags;

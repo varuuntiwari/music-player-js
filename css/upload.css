@@ -1,0 +1,53 @@
+#getSong {
+    width: 28vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file-upload {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 30%;
+    transition-duration: 0.3s;
+    box-shadow: 2px 6px;
+}
+
+#file-upload:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px;
+}
+
+#readySong {
+    width: 100%;
+    margin-top: 5%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#readySong > button {
+    width: 50%;
+    background-color: aliceblue;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    box-shadow: 2px 6px;
+}
+
+div#readySong > button:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px;
+}
+
+#fileName {
+    margin: 10px;
+}
